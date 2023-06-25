@@ -1,138 +1,149 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Artem Dxtra</title>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>dxtra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="#" type="png">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'Source Code Pro', monospace;
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+    }
 
-<link rel="stylesheet" href="stylesheets/styles.css">
-<link rel="stylesheet" href="stylesheets/pygment_trac.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    body {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 0.9em;
+        color: #393E46;
+        background-color: #f7f7f7;
+    }
+
+    a {
+        color: #393E46;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .a1:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/NothingOS_Clock.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .a2:hover::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vh;
+        height: 50vh;
+        background-image: url("styles/image/ear_\(1\)_App.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+   
+    .column {
+        float: left;
+        width: 50%;
+        padding: 1em;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .year {
+        color: gray;
+    }
+
+    .subtitle {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 0.7em;
+        color: black;
+        text-transform: uppercase;
+        padding-top: 0.7em;
+    }
+
+    .headline {
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+
+    span {
+        color: #bebebe;
+        font-size: 0.7em;
+    }
+
+    </style>
 </head>
-<body>
-<div class="wrapper">
-<header>
-<h1>Artem Dxtra</h1>
-</header>
 
-<section>
+<body><p class="headline"><b>dxtra</b></p>
 
-<p><i></i>I build cloud computing infrastructure and systems for Big Data and AI. 
-
-<h3>Papers:</h3>
-
-<p>
-  <a href="#">Elasticsearch cache usage</a>. Keynote at Spark Summit. New York City, Feb 2016.
-</p>
-
-<p>
-  <a href="#">Reasons not to use Kubernates</a> [RU]. Keynote at Spark Summit. New York City, Feb 2016.
-</p>
-
-<p>
-  <a href="#">Improving Hadoop Performance via Linux</a> [RU]. Keynote at Spark Summit.
-</p>
-
-<p>
-  <a href="#">HyperLogLog algorithm</a> [RU]. Keynote at Spark Summit. New York City, Feb 2016.
-</p>
-
-
-<h3>Some recent, useful talks:</h3>
-
-<p>
-<a href="talks/2016-02-18_spark_summit_streaming.pdf">The Future of Real-time in Spark</a>. Keynote at Spark Summit. New York City, Feb 2016.
-</p>
-
-<p>
-<a href="talks/2016-02-08_japan keynote_ja.pdf">Spark 2.0: What's Next</a>. Keynote at Hadoop and Spark Conference. Tokyo, Feb 2016.
-</p>
-
-<p>
-<a href="talks/2016-02-08_tungsten_ja.pdf">Deep Dive into Project Tungsten</a>: Discusses how we are rearchitecting Spark backend to accomplish 10X performance improvements. Hadoop and Spark Conference. Tokyo, Feb 2016.
-</p>
-
-<p>
-<a href="talks/2015-12-03_strata_singapore_keynote.pdf">State of Spark, and where it is going</a>. Keynote at Strata Hadoop World Asia, covering Spark use cases in Asia. Singapore, Dec 2015.
-</p>
-
-<p>
-<a href="talks/2015-10-29_spark_summit_eu_keynote.pdf">A look ahead at Spark’s development</a>. Keynote at Spark Summit Europe. Amsterdam, Oct 2015.
-</p>
-
-<p>
-<a href="http://www.slideshare.net/databricks/sketching-big-data-with-spark-randomized-algorithms-for-largescale-data-analytics">Sketching Big Data with Spark</a>: Discusses randomized and sketch algorithms for large-scale data analytics, including Bloom filter, frequent items, stratified sampling. Strata NYC, Oct 2015.
-</p>
-
-<p>
-<a href="talks/2015-02-17_spark_dataframes.pdf">Spark DataFrames for Large-scale Data Science</a>. DataFrame introduction at Bay Area Spark User Meetup. Feb 2015.
-</p>
-
-<p>
-<a href="talks/2015-01-27_Interfaces.pdf">Interfaces, Interfaces, Interfaces</a>. On interface design at Databricks Retreat. Aug 2014.
-</p>
-
-
-
-<h3>Projects:</h3>
-
-<p>
-<a href="db-readings.html">Readings in Databases</a>: I maintain a list of papers essential to the understanding of database systems online.
-</p>
-
+<div class="column">
+    <p>Data Intensive, Big Data and AI.</p>
+    <p><br></p>
+    <a href="mailto:self@dxtra.cc" target="_blank">Email</a> ·
 <!--
-<p>
-<a href="https://databricks.com/blog/2015/04/28/project-tungsten-bringing-spark-closer-to-bare-metal.html">Tungsten: Bringing Spark Closer to Bare Metal</a>: Re-architecture of Spark execution engine to substantially improving the efficiency of memory and CPU.
-</p>
-
-<p>
-<a href="https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html">DataFrames</a>: Rethinking how we can make Spark 100X easier to use for data scientists and engineers.
-</p>
-
-<p>
-<a href="http://spark.apache.org">Apache Spark</a>: The leading next-generation distributed data processing engine.
-</p>
-
-<p>
-<a href="http://shark.cs.berkeley.edu">Shark</a>: An open source SQL query engine. It uses Spark as the physical execution engine and can run Hive QL queries up to 100x faster without losing the fault-tolerance and scale-out properties of MapReduce. Shark has been subsumed by <a href="https://databricks.com/blog/2015/04/13/deep-dive-into-spark-sqls-catalyst-optimizer.html">Spark SQL</a>.
-</p>
-
-<p>
-<a href="https://amplab.cs.berkeley.edu/publication/graphx-unifying-data-parallel-and-graph-parallel-analytics/">GraphX</a>: Proposing a new way to think about graph computation.
-</p>
-
-<p>
-<a href="#">CrowdDB</a>: A pioneering database system that incorporates crowd-sourced query processing. The project presents a vision in which humans are simply resources database systems can use to answer queries.
-</p>
-
+    <a href="https://read.cv/7luyuhang" target="_blank">Blogposts</a> ·
+    <a href="https://dribbble.com/7ahang" target="_blank">Concept</a> ·
+    <a href="https://www.instagram.com/7ahang/" target="_blank">Photo</a><br>
 -->
-
-<!--
-<h3>Education/Teaching</h3>
-<p>
-In the course of my PhD, I have been teaching in various capacities:
-</p>
-
-<o><a href="http://meet.mit.edu/">Middle East Education through Technology</a>: I spent a summer in Jerusalem teaching a group of Palestinian and Israeli high school students Android programming in Jerusalem.</p>
-
-<p><a href="http://datascienc.es/">Introduction to Data Science</a> with Jeff Hammerbacher.</p>
-
-<p><a href="https://sites.google.com/a/cs.berkeley.edu/cs186-sp11/">Database Systems</a> with Michael Franklin.</p>
- -->
-
-</section>
-
-
-<!--- ############################################################ -->
-<!--- ############################################################ -->
-<!--- ############################################################ -->
-<!--- ############################################################ -->
-<footer>
-<p>Maintained by <a href="http://dxtra.org">Artem Dxtra</a>
-</footer>
 </div>
-</body>
-</html>
+
+
+<div class="column">
+    <p class="subtitle"><b>Projects</b></p>
+
+    <p class="line">
+        <span>2021</span> <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">Deep Dive into Project Tungsten</a>
+    </p>
+    <p class="line">
+        &nbsp;&nbsp;&nbsp; <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">State of Spark, and where it is going</a>
+    </p>
+    <p class="line">
+        &nbsp;&nbsp;&nbsp; <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">A look ahead at Spark’s development</a>
+    </p>
+    <p class="line">
+        &nbsp;&nbsp;&nbsp; <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">The Future of Real-time in Spark</a>
+    </p>
+    <p class="line">
+        &nbsp;&nbsp;&nbsp; <a class="a1" href="https://nothing.tech/pages/phone-1" target="_blank">Reasons not to use Kubernates</a>
+    </p>
+    <br>
+
+    <p class="line">
+        <span>2020</span> <a href="https://semi.design/en-US/" target="_blank">Semi Design</a>
+    </p>
+    <br><br><br>
+    <p class="subtitle"><b>Papers</b></p>
+    <p class="line">
+        <span>2021</span> <a href="https://www.oneplus.com/us/oxygenos13" target="_blank">Elasticsearch cache usage</a>
+    </p>
+    <br>
+
+    <p class="line">
+        <span>2020</span> <a href="https://www.oppo.com/en/accessories/oppo-watch/" target="_blank">Readings in Databases</a>
+    </p>
+
+    <p class="line">
+        &nbsp;&nbsp;&nbsp; <a href="https://www.oneplus.com/uk/oneplus-watch" target="_blank">OnePlus Watch Face</a>
+    </p>
+</div>
+
+
+</body></html>
